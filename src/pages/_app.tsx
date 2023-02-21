@@ -6,7 +6,7 @@ import { ProductProps } from '../types';
 const App = ({ Component, pageProps }: AppProps) => {
   const bagLocalStorage =
     typeof window !== 'undefined'
-      ? JSON.parse(localStorage.getItem('shopBag')) ?? []
+      ? JSON.parse(localStorage.getItem('shopBag') as any) ?? []
       : [];
 
   const [shopBag, setShopBag] = useState<any[]>(bagLocalStorage);
