@@ -25,7 +25,7 @@ interface PostProps {
 }
 
 const Post = ({ post }: PostProps) => {
-  console.log(post);
+  // console.log(post);
 
   const { id, attributes } = post;
 

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export const getServerSideProps = async ({ query: { url } }) => {
-  console.log(`URL: ${url}`);
+  // console.log(`URL: ${url}`);
   // http://localhost:1337/api/mangas?filters[url]=attack-on-titan-28&populate=*
   const response = await fetch(
     `${process.env.API_URL}/mangas?filters[url]=${url}&populate=*`
@@ -20,7 +20,7 @@ export const getServerSideProps = async ({ query: { url } }) => {
 
 const Product = ({ manga, addShopBag }) => {
   const { title, description, mangaka, price, image } = manga[0].attributes;
-  console.log(manga[0].id);
+  // console.log(manga[0].id);
 
   const [quantity, setQuantity] = useState(0);
 

@@ -39,7 +39,7 @@ export const getServerSideProps = async ({ query: { url } }: UrlProps) => {
 };
 
 const Post = ({ post }: PostProps) => {
-  console.log(post);
+  // console.log(post);
 
   const { id, attributes } = post[0];
 

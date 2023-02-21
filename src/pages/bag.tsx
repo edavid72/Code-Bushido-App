@@ -12,8 +12,8 @@ const Bag = ({ shopBag, updateQty, deleteItem }: BagProps) => {
       (total, item) => total + item.quantity * item.price,
       0
     );
-    setTotal(calculateTotalPayment);
-    console.log(+calculateTotalPayment.toFixed(2));
+    setTotal(+calculateTotalPayment.toFixed(2));
+    // console.log(+calculateTotalPayment.toFixed(2));
   }, [shopBag]);
 
   return (

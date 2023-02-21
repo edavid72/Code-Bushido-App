@@ -36,7 +36,7 @@ interface BlogProps {
 }
 
 const Blog = ({ blogs }: BlogProps) => {
-  console.log(blogs);
+  // console.log(blogs);
   return (
     <Layout
       title="Blog"
