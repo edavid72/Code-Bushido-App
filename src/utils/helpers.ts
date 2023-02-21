@@ -6,5 +6,5 @@ export const dateFormatter = (date: string) => {
     day: '2-digit',
   };
 
-  return newDate.toLocaleDateString('es-ES', options);
+  return newDate.toLocaleDateString('es-ES', options as any);
 };
