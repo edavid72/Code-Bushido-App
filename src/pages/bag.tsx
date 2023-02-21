@@ -63,7 +63,7 @@ const Bag = ({ shopBag, updateQty, deleteItem }: BagProps) => {
                     </div>
                   </div>
 
-                  <div className="w-3/12 flex space-x-5 items-end">
+                  <div className="w-3/12 md:flex space-x-5 items-end">
                     <div>
                       <p className="font-bold">$ {item.price}</p>
                       <p className="font-light">
@@ -72,9 +72,11 @@ const Bag = ({ shopBag, updateQty, deleteItem }: BagProps) => {
                       </p>
                     </div>
                     <button onClick={() => deleteItem(item.id)}>
-                      <RiDeleteBinLine className="text-2xl text-gray-500 hover:text-gray-600 transition-all duration-200 cursor-pointer" />
+                      <RiDeleteBinLine className="mt-4 md:mt-0 text-2xl text-gray-500 hover:text-gray-600 transition-all duration-200 cursor-pointer" />
                     </button>
                   </div>
+
+
                 </div>
               );
             })}
