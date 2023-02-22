@@ -79,10 +79,12 @@ const Bag = ({ shopBag, updateQty, deleteItem }: BagProps) => {
             })}
           </div>
 
-          <div className="bg-gray-200 rounded-md mt-6 p-6 flex flex-row justify-end space-x-28 md:space-x-60 font-semibold">
-            <p>Total</p>
-            <p>$ {total}</p>
-          </div>
+          <aside>
+            <div className="bg-gray-200 rounded-md mt-6 p-6 flex flex-row justify-end space-x-28 md:space-x-60 font-semibold">
+              <p>Total</p>
+              <p>$ {total}</p>
+            </div>
+          </aside>
         </div>
       </main>
     </Layout>
