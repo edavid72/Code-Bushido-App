@@ -29,17 +29,16 @@ const Bag = ({ shopBag, updateQty, deleteItem }: BagProps) => {
               return (
                 <div
                   key={item.id}
-                  className="flex items-center border-b-2 border-gray-200"
+                  className="flex items-center border-b-2 border-gray-200 py-6"
                 >
                   <Image
                     src={item.image}
                     alt={item.title}
                     width={130}
                     height={40}
-                    className="m-4"
                   />
 
-                  <div className="w-6/12 space-y-3">
+                  <div className="ml-1 w-5/12 space-y-3">
                     <h3 className="font-bold">{item.title}</h3>
                     <p>{item.mangaka}</p>
                     <div>
@@ -63,7 +62,7 @@ const Bag = ({ shopBag, updateQty, deleteItem }: BagProps) => {
                     </div>
                   </div>
 
-                  <div className="w-3/12 md:flex space-x-5 items-end">
+                  <div className="w-4/12 md:flex space-x-5 items-end">
                     <div>
                       <p className="font-bold">$ {item.price}</p>
                       <p className="font-light">
@@ -75,19 +74,15 @@ const Bag = ({ shopBag, updateQty, deleteItem }: BagProps) => {
                       <RiDeleteBinLine className="mt-4 md:mt-0 text-2xl text-gray-500 hover:text-gray-600 transition-all duration-200 cursor-pointer" />
                     </button>
                   </div>
-
-
                 </div>
               );
             })}
           </div>
 
-          <aside className="bg-green-300">
-            <div>
-              <p>Total</p>
-              <p>$ {total}</p>
-            </div>
-          </aside>
+          <div className="bg-gray-200 rounded-md mt-6 p-6 flex flex-row justify-end space-x-28 md:space-x-60 font-semibold">
+            <p>Total</p>
+            <p>$ {total}</p>
+          </div>
         </div>
       </main>
     </Layout>

@@ -79,7 +79,7 @@ const Header = () => {
                   pathname === '/bag' ? 'border-white bg-[#2877c2]' : undefined
                 }`}
               >
-                <BsFillCartPlusFill className='text-2xl'/>
+                <BsFillCartPlusFill className="text-2xl" />
               </Link>
             </nav>
           </div>
