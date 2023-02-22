@@ -28,13 +28,12 @@ const Header = () => {
 
               <p className="mt-1.5 text-sm sm:text-lg text-gray-200">
                 The best Anime & Manga store
-                <span className="text-xl ml-2">📙</span>
               </p>
             </div>
           </div>
 
           <div className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-            <nav className="flex">
+            <nav className="flex items-center">
               {/*Link to: Home Page */}
               <Link
                 href={'/'}
